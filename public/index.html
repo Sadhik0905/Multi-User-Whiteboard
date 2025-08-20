@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-User Drawing Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Collaborative Drawing Board</h2>
+  <div class="toolbar">
+    <input type="color" id="colorPicker" value="#000000">
+    <select id="shape">
+      <option value="freehand">Freehand</option>
+      <option value="line">Line</option>
+      <option value="rect">Rectangle</option>
+      <option value="circle">Circle</option>
+    </select>
+    <button id="saveBtn">Save Board</button>
+  </div>
+  <canvas id="board"></canvas>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
